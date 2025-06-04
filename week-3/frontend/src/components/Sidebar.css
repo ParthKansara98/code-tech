@@ -1,0 +1,209 @@
+.sidebar {
+  width: 300px;
+  background: #2c3e50;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.sidebar-header {
+  padding: 1.5rem;
+  border-bottom: 1px solid #34495e;
+}
+
+.sidebar-header h3 {
+  margin: 0 0 0.5rem 0;
+  font-size: 1.3rem;
+}
+
+.connection-status {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 0.9rem;
+  color: #bdc3c7;
+}
+
+.status-indicator {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #e74c3c;
+}
+
+.status-indicator.connected {
+  background: #2ecc71;
+}
+
+.user-info {
+  padding: 1rem 1.5rem;
+  background: #34495e;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.username {
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.rooms-section {
+  flex: 1;
+  overflow-y: auto;
+}
+
+.rooms-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 1.5rem;
+  font-weight: 600;
+  font-size: 0.9rem;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  color: #bdc3c7;
+}
+
+.create-room-btn {
+  width: 24px;
+  height: 24px;
+  border: none;
+  border-radius: 50%;
+  background: #3498db;
+  color: white;
+  cursor: pointer;
+  font-size: 1.2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.2s;
+}
+
+.create-room-btn:hover {
+  background: #2980b9;
+}
+
+.create-room-form {
+  padding: 1rem 1.5rem;
+  background: #34495e;
+  border-bottom: 1px solid #2c3e50;
+}
+
+.room-name-input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #5a6c7d;
+  border-radius: 4px;
+  background: #2c3e50;
+  color: white;
+  font-size: 0.9rem;
+  margin-bottom: 0.75rem;
+}
+
+.room-name-input:focus {
+  outline: none;
+  border-color: #3498db;
+}
+
+.room-name-input::placeholder {
+  color: #95a5a6;
+}
+
+.form-buttons {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.create-btn, .cancel-btn {
+  padding: 0.4rem 0.8rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 0.8rem;
+  cursor: pointer;
+  transition: background-color 0.2s;
+}
+
+.create-btn {
+  background: #27ae60;
+  color: white;
+}
+
+.create-btn:hover:not(:disabled) {
+  background: #229954;
+}
+
+.create-btn:disabled {
+  background: #95a5a6;
+  cursor: not-allowed;
+}
+
+.cancel-btn {
+  background: #7f8c8d;
+  color: white;
+}
+
+.cancel-btn:hover {
+  background: #6c7b7d;
+}
+
+.rooms-list {
+  padding: 0 0.5rem;
+}
+
+.room-item {
+  padding: 0.75rem 1rem;
+  cursor: pointer;
+  border-radius: 6px;
+  margin: 0.25rem 0;
+  transition: background-color 0.2s;
+}
+
+.room-item:hover {
+  background: #34495e;
+}
+
+.room-item.active {
+  background: #3498db;
+}
+
+.room-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.room-name {
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.room-users {
+  font-size: 0.8rem;
+  color: #bdc3c7;
+}
+
+.room-item.active .room-users {
+  color: #ecf0f1;
+}
+
+.sidebar-footer {
+  padding: 1rem 1.5rem;
+  border-top: 1px solid #34495e;
+  background: #2c3e50;
+}
+
+.app-info {
+  text-align: center;
+}
+
+.app-info span {
+  display: block;
+  font-weight: 500;
+  font-size: 0.9rem;
+  margin-bottom: 0.25rem;
+}
+
+.app-info small {
+  color: #bdc3c7;
+  font-size: 0.75rem;
+}

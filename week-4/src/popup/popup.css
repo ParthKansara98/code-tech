@@ -1,0 +1,404 @@
+/* Popup Styles */
+.popup-container {
+  width: 350px;
+  min-height: 500px;
+  background: #ffffff;
+  color: #333;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+}
+
+.popup-container.dark {
+  background: #1a1a1a;
+  color: #fff;
+}
+
+/* Header */
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 16px;
+  border-bottom: 1px solid #e0e0e0;
+  background: #f8f9fa;
+}
+
+.popup-container.dark .popup-header {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+.popup-header h1 {
+  margin: 0;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.header-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-icon {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.2s;
+}
+
+.btn-icon:hover {
+  background: rgba(0, 0, 0, 0.1);
+}
+
+.popup-container.dark .btn-icon:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+
+/* Navigation */
+.tab-nav {
+  display: flex;
+  background: #f8f9fa;
+  border-bottom: 1px solid #e0e0e0;
+}
+
+.popup-container.dark .tab-nav {
+  background: #2d2d2d;
+  border-bottom-color: #404040;
+}
+
+.tab-btn {
+  flex: 1;
+  padding: 12px 8px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  transition: all 0.2s;
+  border-bottom: 2px solid transparent;
+}
+
+.tab-btn:hover {
+  background: rgba(0, 0, 0, 0.05);
+}
+
+.tab-btn.active {
+  color: #007acc;
+  border-bottom-color: #007acc;
+  background: rgba(0, 122, 204, 0.1);
+}
+
+.popup-container.dark .tab-btn:hover {
+  background: rgba(255, 255, 255, 0.05);
+}
+
+/* Content */
+.popup-content {
+  padding: 16px;
+  max-height: 400px;
+  overflow-y: auto;
+}
+
+/* Loading */
+.loading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 200px;
+  font-size: 16px;
+}
+
+/* Overview Tab */
+.overview-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.stat-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.popup-container.dark .stat-card {
+  background: #2d2d2d;
+}
+
+.stat-card h3 {
+  margin: 0 0 12px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.stat-row {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+}
+
+.stat-row:last-child {
+  margin-bottom: 0;
+}
+
+.stat-label {
+  font-size: 14px;
+  color: #666;
+}
+
+.popup-container.dark .stat-label {
+  color: #aaa;
+}
+
+.stat-value {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.stat-value.productive {
+  color: #28a745;
+}
+
+.stat-value.distracting {
+  color: #dc3545;
+}
+
+/* Progress Card */
+.progress-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.popup-container.dark .progress-card {
+  background: #2d2d2d;
+}
+
+.progress-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.progress-circle {
+  width: 80px;
+  height: 80px;
+  border-radius: 50%;
+  background: conic-gradient(#007acc 0deg, #e0e0e0 0deg);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 12px;
+  position: relative;
+}
+
+.progress-circle::before {
+  content: '';
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #ffffff;
+  position: absolute;
+}
+
+.popup-container.dark .progress-circle::before {
+  background: #1a1a1a;
+}
+
+.progress-value {
+  font-size: 18px;
+  font-weight: 600;
+  z-index: 1;
+  position: relative;
+}
+
+.progress-text {
+  margin: 0;
+  font-size: 14px;
+  color: #666;
+}
+
+.popup-container.dark .progress-text {
+  color: #aaa;
+}
+
+/* Goals Tab */
+.goals-tab {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.goal-card {
+  background: #f8f9fa;
+  border-radius: 8px;
+  padding: 16px;
+}
+
+.popup-container.dark .goal-card {
+  background: #2d2d2d;
+}
+
+.goal-card h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.goal-item {
+  margin-bottom: 16px;
+}
+
+.goal-item:last-child {
+  margin-bottom: 0;
+}
+
+.goal-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 8px;
+  font-size: 14px;
+}
+
+.progress-bar {
+  width: 100%;
+  height: 8px;
+  background: #e0e0e0;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+.popup-container.dark .progress-bar {
+  background: #404040;
+}
+
+.progress-fill {
+  height: 100%;
+  border-radius: 4px;
+  transition: width 0.3s ease;
+}
+
+.progress-fill.productive {
+  background: #28a745;
+}
+
+.progress-fill.distracting {
+  background: #ffc107;
+}
+
+.progress-fill.over-limit {
+  background: #dc3545;
+}
+
+.warning-text {
+  margin: 8px 0 0 0;
+  font-size: 12px;
+  color: #dc3545;
+  font-weight: 500;
+}
+
+/* Websites Tab */
+.websites-tab h3 {
+  margin: 0 0 16px 0;
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.website-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.no-data {
+  text-align: center;
+  color: #666;
+  font-style: italic;
+  margin: 32px 0;
+}
+
+.popup-container.dark .no-data {
+  color: #aaa;
+}
+
+.website-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  background: #f8f9fa;
+  border-radius: 6px;
+  transition: background-color 0.2s;
+}
+
+.popup-container.dark .website-item {
+  background: #2d2d2d;
+}
+
+.website-item:hover {
+  background: #e9ecef;
+}
+
+.popup-container.dark .website-item:hover {
+  background: #3d3d3d;
+}
+
+.website-info {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.website-domain {
+  font-weight: 500;
+  font-size: 14px;
+}
+
+.website-category {
+  font-size: 12px;
+  padding: 2px 6px;
+  border-radius: 3px;
+  text-transform: capitalize;
+  font-weight: 500;
+}
+
+.website-category.productive {
+  background: rgba(40, 167, 69, 0.1);
+  color: #28a745;
+}
+
+.website-category.distracting {
+  background: rgba(220, 53, 69, 0.1);
+  color: #dc3545;
+}
+
+.website-category.neutral {
+  background: rgba(108, 117, 125, 0.1);
+  color: #6c757d;
+}
+
+.website-stats {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 2px;
+}
+
+.website-time {
+  font-weight: 600;
+  font-size: 14px;
+}
+
+.website-visits {
+  font-size: 12px;
+  color: #666;
+}
+
+.popup-container.dark .website-visits {
+  color: #aaa;
+}
